@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pesquisa</title>
+        <style>
+            textarea{
+                width: 600px; height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Pesquisa de Opinião</h1>
+        <p>Nessa pesquisa você será questionado sobre o produto X. Esse produto em todo o país em perfumarias, lojas de departamento, internet, entre outros. Responda as questões abaixo de acordo com sua opinião.</p>
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <form method="get" action="envio_dados.php">
+                <input type="text" name="nome" placeholder="Digite o seu nome"><br><br>
+                <input type="text" name="idade" placeholder="Digite a sua idade"><br><br>
+                <input type="text" name="email" placeholder="Digite o seu e-mail"><br><br>
+                <label for="date">Data de nascimento:</label><br><input type="date" name="nascimento"><br><br>
+                <label for="password">Digite uma senha para acessar os dados da pesquisa posteriormente:</label><br>
+                <input type="password" name="senha" placeholder="Digite uma senha">
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>Aspecto do produto</legend>
+            <label for="color">Selecione a cor do produto após 6 meses de uso:</label><br><input type="color" name="color" value="#000000"><br><br>
+            <label for="file">Adicione uma foto do seu produto:</label><br><input type="file" name="arquivo">
+        </fieldset>
+        <fieldset>
+            <legend>Opinião quanto a utilização</legend>
+            <label for="radio">Você gosta do cheiro do produto?</label><br>
+            <input type="radio" name="gosto" value="muito">Gosto muito<br>
+            <input type="radio" name="gosto" value="gosto">Gosto<br>
+            <input type="radio" name="gosto" value="nsei">Não sei<br>
+            <input type="radio" name="gosto" value="ngosto">Não gosto<br>
+            <input type="radio" name="gosto" value="odeio">Odeio<br><br>
+            <label for="checkbox">Marque as características do produto que mais gosta</label><br>
+            <input type="checkbox" name="carac" value="carac">Fixação<br>
+            <input type="checkbox" name="carac" value="carac">Textura<br>
+            <input type="checkbox" name="carac" value="carac">Cheiro<br>
+            <input type="checkbox" name="carac" value="carac">Cor<br>
+            <input type="checkbox" name="carac" value="carac">Embalagem<br>
+        </fieldset>
+        <fieldset>
+            <legend>Nível de satisfação</legend>
+            <label for="range">Coloque nessa escala seu nível de satisfação geral do produto (de 0 à 100)</label><br>
+            <input type="range" name="satisfacao" min="0" max="100"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Opiniões</legend>
+            <label for="textarea">Digite abaixo sua opinião geral sobre esse produto</label><br>
+            <textarea></textarea><br><br>
+        </fieldset>
+        <form>
+            <br>
+            <input type="submit" name="enviar" value="Gravar respostas">
+        </form>
+    </body>
+</html>
