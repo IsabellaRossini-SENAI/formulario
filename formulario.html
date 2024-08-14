@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário</title>
+        <style>
+            textarea{
+                width: 400px;height: 100px;
+                font-size: 110%;
+            }
+            legend{
+                font-size: 110%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exemplos de Formulário em HTML</h1>
+        <h3>Exemplo 01</h3>
+        <form method="get" action="envio_dados.php">
+            <input type="text" name="nome" placeholder="Nome">
+            <input type="e-mail" name="email" placeholder="Email">
+            <input type="date" name="nascimento">
+            <input type="tel" name="usertel" placeholder="Celular">
+            <input type="password" name="senha" placeholder="Senha">
+            <input type="submit" name="cadastrar" value="Cadastrar">
+        </form><br>
+        <h3>Exemplo 02</h3>
+        <form>
+            <textarea>"Texto livre"</textarea>
+        </form><br>
+        <h3>Exemplo 03</h3>
+        <fieldset>
+            <legend>Formulário</legend>
+            <form>
+                Nome: <input type="text" name="nome"><br><br>
+                Sexo: <input type="radio" name="sexo" value="masculino">Masculino
+                <input type="radio" name="sexo" value="feminino">Feminino<br><br>
+            </form>
+                <select name="lista" id="lista">
+                    <label for="lista">País:</label>
+                    <option>Selecione uma opção</option>
+                    <option>Argentina</option>
+                    <option>Bolívia</option>
+                    <option>Brasil</option>
+                    <option>Chile</option>
+                    <option>Colômbia</option>
+                    <option>Costa Rica</option>
+                    <option>Cuba</option>
+                    <option>Equador</option>
+                    <option>Haiti</option>
+                    <option>Honduras</option>
+                    <option>México</option>
+                    <option>Panamá</option>
+                    <option>Paraguai</option>
+                    <option>Peru</option>
+                    <option>Uruguai</option>
+                </select>
+            <form>
+                <br>
+                Mensagem:<br><textarea style="width: 300px; height: 100px;"></textarea>
+            </form>
+            <br>
+            <input type="checkbox" name="assinar" value="assinar">Assinar Newsletter?
+            <br><br>
+            <input type="submit" name="enviar" value="Enviar">
+        </fieldset>
+        <h3>Exemplo 04</h3>
+        <form action="https://www.google.com/search?q=teste&rlz=1C1GCEU_pt-BRBR1121BR1121&oq=teste+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiPAjIHCAIQABiPAjIHCAMQABiPAtIBCDE3MDJqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8">
+            <input type="search" name="q">
+           <button><input type="button" value="Clique para pesquisar"></button>
+        </form>
+    </body>
+</html>
